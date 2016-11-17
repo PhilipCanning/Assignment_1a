@@ -12,6 +12,7 @@ using namespace std;
 int _tmain(int argc, _TCHAR* argv[])
 {
 	int number1 = 0, number2 = 0, number3 = 0, differOne = 0, differTwo = 0;
+	bool valid;
 
 	cout << "\n\n\tplease enter number 1: ";
 	cin >> number1;
@@ -33,14 +34,33 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	if (differOne == differTwo)
 		cout << "\n\n\tTrue";
-	else
+	
+	else if (differOne != differTwo)
+
 		cout << "\n\n\tFalse";
 
 	cout << "\n\n\tPress any key to continue...";
-	
 
-	
+	while (number1 = false)
+	{
+		cout << "\n\n\tPlease enter your number: ";
+		cin >> number1;
+
+		if (cin.fail())
+		{
+			cout << "\n\n\tERROR";
+			_getch();
+			cin.clear();
+		}
+		else
+		{
+			valid = true;
+		}
+		cin.ignore(80, 'n');
+	}
+	while (valid);
+
+
 	_getch();
 	return 0;
 }
-
