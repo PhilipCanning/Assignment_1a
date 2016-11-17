@@ -1,3 +1,1 @@
-﻿  Question 1a.cpp
-  Question 1a.vcxproj -> C:\Users\Philip\Documents\GitHub\Assignment_1a\Question 1a\Debug\Question 1a.exe
-  Question 1a.vcxproj -> C:\Users\Philip\Documents\GitHub\Assignment_1a\Question 1a\Debug\Question 1a.pdb (Full PDB)
+﻿LINK : fatal error LNK1168: cannot open C:\Users\Philip\Documents\GitHub\Assignment_1a\Question 1a\Debug\Question 1a.exe for writing

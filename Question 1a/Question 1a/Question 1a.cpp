@@ -21,6 +21,29 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << "\n\n\tplease enter number 3: ";
 	cin >> number3;
 
+	while (number1 = false)
+	{
+		cout << "\n\n\tPlease enter your number: ";
+		cin >> number1;
+		cin >> number2;
+		cin >> number3;
+
+		if (cin.fail())
+		{
+			cout << "\n\n\tERROR";
+			_getch();
+			cin.clear();
+			
+		}
+		else
+		{
+			valid = true;
+		}
+		cin.ignore(80, 'n');
+	}
+	while (!valid);       // Everytime I enter an invalid input the program debugs and it comes up this thing about
+	                        // 'breaking' and creates line 43 as a breakpoint, theres like a little yellow line on it
+
 	int temp = 0;
 	if (number1 < number2)
 		temp = number1, number1 = number2, number2 = temp;
@@ -40,25 +63,6 @@ int _tmain(int argc, _TCHAR* argv[])
 		cout << "\n\n\tFalse";
 
 	cout << "\n\n\tPress any key to continue...";
-
-	while (number1 = false)
-	{
-		cout << "\n\n\tPlease enter your number: ";
-		cin >> number1;
-
-		if (cin.fail())
-		{
-			cout << "\n\n\tERROR";
-			_getch();
-			cin.clear();
-		}
-		else
-		{
-			valid = true;
-		}
-		cin.ignore(80, 'n');
-	}
-	while (valid);
 
 
 	_getch();
